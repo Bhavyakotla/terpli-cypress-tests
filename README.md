@@ -42,7 +42,7 @@ The test suite fulfills the following criteria:
 2. Open a terminal and navigate to the cloned project's directory.
 3. Install the required node modules (including Cypress) by running, **npm install**
 4. To open Cypress and run the tests, execute: **npx cypress open**
-5. In the Cypress Test Runner interface that opens, click on the test suite you wish to run.
+5. In the Cypress Test Runner interface that opens, click on the test suite 'terpliPluginTest.cy.js' present in the e2e folder in cypress.
 
 ### Assumptions
 - For the non-bonus part, for verifying the presence of the Terpli launcher icon and its functionality to display the plugin upon clicking: I assumed that location here means the 'left' and 'right' position of the Terpli launcher since the dropdown for the first two websites does not have more than one location.
