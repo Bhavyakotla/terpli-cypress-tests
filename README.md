@@ -44,6 +44,9 @@ The test suite fulfills the following criteria:
 4. To open Cypress and run the tests, execute:
 5. In the Cypress UI, select the test file you wish to run.
 
+### Assumptions
+- For the non-bonus part, for verifying the presence of the Terpli launcher icon and its functionality to display the plugin upon clicking: I assumed that location here means the 'left' and 'right' position of the Terpli launcher since the dropdown does not have more than one location.
+
 ### Additional Notes
 
 - The Cypress Test Runner provides a detailed log for each test command, aiding in debugging and analysis.
