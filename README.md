@@ -47,9 +47,8 @@ The test suite fulfills the following criteria:
 ### Assumptions
 - For the non-bonus part, for verifying the presence of the Terpli launcher icon and its functionality to display the plugin upon clicking: I assumed that location here means the 'left' and 'right' position of the Terpli launcher since the dropdown for the first two websites does not have more than one location.
 - For error logging, the following practices were followed:
--   Pass/Fail Status Indication: Cypress inherently provides a clear indication of pass or fail status for each test case. If a test passes, it's marked as such in the Cypress test runner. If a test fails, the test runner highlights the failed test.
--   Error Messages Pinpointing Failures by Each Location:
-  a) In the "Interact with Multi-Location Dropdown and Test Functionality" test, if an error occurs during the testing of a specific location, the catch block within the cy.wrap(null).then(() => {...}) construct logs the error message along with the location value. This fulfills the requirement of pinpointing failures by each location.
+1. Pass/Fail Status Indication: Cypress inherently provides a clear indication of pass or fail status for each test case. If a test passes, it's marked as such in the Cypress test runner. If a test fails, the test runner highlights the failed test.
+2. Error Messages Pinpointing Failures by Each Location: a) In the "Interact with Multi-Location Dropdown and Test Functionality" test, if an error occurs during the testing of a specific location, the catch block within the cy.wrap(null).then(() => {...}) construct logs the error message along with the location value. This fulfills the requirement of pinpointing failures by each location.
 b) However, the error logging is done through cy.log(), which is more of a diagnostic log and may not cause the test to fail in Cypress. The test will continue executing for all locations regardless of any individual failure.
 
 
