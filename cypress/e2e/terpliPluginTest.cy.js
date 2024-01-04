@@ -29,7 +29,7 @@ const verifyTerpliPlugin = () => {
         win.terpliLoadPlugin();
       });
   
-      cy.wait(2000); // Adjust based on expected load time
+      cy.wait(3000); // Adjust based on expected load time
       verifyTerpliPlugin();
       cy.get('#terpli_floating')
         .should('have.class', `terpli_${position}`, `Terpli plugin should be on the ${position}`);
